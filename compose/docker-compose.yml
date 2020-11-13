@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    get5-web:
+        image: linuxserver/plex
+            environment:
+
+    csgo-1:
+        image: linuxserver/plex
+        environment:
+            - CS_PORT=27015
+            - CS_TV_PORT=27020
+            - CS_TICKRATE=128
+            - CS_NAME="CS:GO Server (1)"
+    csgo-2:
+        image: linuxserver/plex
+        environment:
+            - CS_PORT=27016
+            - CS_TV_PORT=27021
+            - CS_TICKRATE=128
+            - CS_NAME="CS:GO Server (2)"
+    csgo-3:
+        image: linuxserver/plex
+        environment:
+            - CS_PORT=27017
+            - CS_TV_PORT=27022
+            - CS_TICKRATE=128
+            - CS_NAME="CS:GO Server (3)"
